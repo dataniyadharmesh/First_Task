@@ -16,7 +16,7 @@ import android.widget.Button;
 
 
 public class Fragment2 extends Fragment {
-    private Button b1;
+    private Button b1,b2;
     private Fragment f1,f2,f3;
     private View view;
 
@@ -35,6 +35,20 @@ public class Fragment2 extends Fragment {
                 FragmentManager fm =getActivity().getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.main_id,f3);
+                ft.addToBackStack(null);
+                fm.popBackStack();
+                ft.commit();
+
+            }
+        });
+        b2 = (Button)v.findViewById(R.id.btn_goto_a);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                f2 = new Fragment1();
+                FragmentManager fm =getActivity().getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.main_id,f2);
                 ft.addToBackStack(null);
                 fm.popBackStack();
                 ft.commit();

@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.main_id,f1);
-      //  ft.addToBackStack(null);
+
         ft.commit();
     }
 }
