@@ -14,18 +14,43 @@
         android:id="@+id/textView"
         android:layout_weight="0.19" />
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="89dp"
-        android:id="@+id/btn_goto_c"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
 
-        android:text="GO TO C"
+
+
+    <Button
+        android:layout_width="122dp"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_goto_a"
+        android:padding="25dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_gravity="center_horizontal"
+        android:text="GO TO A"
         android:textColor="#000000"
         android:background="#23CD56"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        />
+        android:textStyle="bold" />
+
+    <Button
+
+    android:layout_width="122dp"
+    android:layout_height="80dp"
+    android:id="@+id/btn_goto_c"
+
+        android:layout_marginLeft="10dp"
+        android:text="GO TO C"
+
+        android:padding="25dp"
+    android:textColor="#000000"
+    android:background="#23CD56"
+    android:textStyle="bold"
+    android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
